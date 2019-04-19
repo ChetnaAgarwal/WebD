@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <h1> CALCULATOR </h1>
+        <script src="button.js"></script>
+    </head>
+    <body>
+        <div id = "calculator">
+            <p id = "display"></p>
+            <div>
+                <button onclick= "calculate(0)">0</button>
+                <button onclick= "calculate(1)">1</button>
+                <button onclick= "calculate(2)">2</button>
+                <button onclick= "calculate(3)">3</button>
+            </div>
+            <div>
+                <button onclick= "calculate('+')">+</button>
+                <button onclick= "calculate(4)">4</button>
+                <button onclick= "calculate(5)">5</button>
+                <button onclick= "calculate(6)">6</button>
+            </div>
+            <div>
+                <button onclick= "calculate('-')">-</button>
+                <button onclick= "calculate(7)">7</button>
+                <button onclick= "calculate(8)">8</button>
+                <button onclick= "calculate(9)">9</button>
+            </div>
+            <div>
+                <button onclick= "calculate('*')">*</button>
+                <button onclick= "calculate('/')">/</button>
+                <button onclick= "calculate('=')">=</button>
+                <button onclick= "calculate('CLR')">CLR</button>
+            </div>
+        </div>
+        <script src = "button.js"</script>
+    </body>
+</html>
