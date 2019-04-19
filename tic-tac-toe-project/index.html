@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <h1> TIC-TAC-TOE </h1>
+    </head>
+    <body>
+        <div id = "ttt">
+            <p id = "display">X's TURN </p>
+            <div>
+                <button id ="b11" onclick= "change11('b11')"></button>
+                <button id ="b12" onclick= "change12()"></button>
+                <button id ="b13" onclick= "change13()"></button>
+            </div>
+            <br>
+            <div>
+                <button id ="b21" onclick= "change21()"></button>
+                <button id ="b22" onclick= "change22()"></button>
+                <button id ="b23" onclick= "change23()"></button>
+            </div>
+            <br>
+            <div>
+                <button id ="b31" onclick= "change31()"></button>
+                <button id ="b32" onclick= "change32()"></button>
+                <button id ="b33" onclick= "change33()"></button>
+            </div>
+            <div id = "winnerMsg"></div>
+            <button id = "reset" onclick = "reset()">PLAY AGAIN</button>
+            <br><br>
+            <div id = "score-card">
+                <h2>SCOREBOARD</h2>
+                <br>
+                <table style="width:30%">
+                    <tr>
+  	                    <th></th>
+                        <th>PLAYER 1 (X)</th>
+                        <th>PLAYER 2 (O)</th> 
+                        <th>TIED</th>
+                    </tr>
+                    <tr>
+                        <th>NO OF GAMES</th>
+                        <th id="p1-score">0</th>
+                        <th id="p2-score">0</th> 
+                        <th id="tied-score">0</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+       <!-- <button id = "reset" onclick = "Start()">RESET</button> -->
+        <script src = "tic-tac-toe.js"></script>
+    </body>
+</html>
